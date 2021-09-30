@@ -18,7 +18,7 @@ body{
 
 
 .bodyimg{
-    position: absolute;
+    position: relative;
 }
 .bodyimg p{
     color:#f7f2f2;
@@ -37,7 +37,7 @@ body{
     position: absolute;
     top:40%;
     left:80%;
-    transform: translate(-40%, -40%);
+    transform: translate(-81%, -40%);
 }
 
 
@@ -74,11 +74,13 @@ a:visited{
 }
 
 .origami img{
-    opacity:1;
+    padding: 10px;
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
 }
 
-.origami img:hover{
-    opacity:0.3;
+.origami:hover{
+    transform: scale(1.2); 
 }
 
 .origami p{
@@ -93,6 +95,8 @@ a:visited{
     position: relative;
 }
 
+
 .origami:hover p{
     opacity:1;
+    transform: scale(1.2);
 }
